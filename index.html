@@ -4,10 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-05</title>
+    <!-- TailWind CSS && DaisyUI -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- Preconnect to Google Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,
+wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<style>
+    *{
+        font-family: 'Inter', sans-serif;
+    } -->
+</style>
+<!-- Custom CSS -->
+
 </head>
-<body>
-    <nav>
-        <h1>Assignment-05</h1>
+
+
+
+
+<body class="bg-[#F5FFF6] pb-20 mx-auto">
+    <nav class="navbar bg-base-200 container mx-auto py-7 md:px-10 bg-white">
+        <div class="flex items-center ">
+            <img src="./assets/logo.png" alt="" class="w-16">
+            <h1>Emergency <br>Service</h1>
+
+        </div>        
+        <!-- menu -->
+      <div class="flex grow justify-end px-2">
+        <div class="flex items-stretch gap-5">
+          <div class="hidden md:flex gap-5">
+            <!-- button 1 -->
+            <button
+              class="btn flex items-center gap-3 px-8 py-6 rounded-full bg-[#41ff6b1a]"
+            >
+              <p class="text-base font-black" id="heart">0</p>
+              <img src="./assets/heart.png" alt="" class="w-7" />
+            </button>
+
+            <!-- button 2 -->
+            <button
+              class="btn flex items-center gap-3 px-8 py-6 rounded-full bg-[#41ff6b1a]"
+            >
+              <p class="text-base font-black" id="coin">100</p>
+              <img src="./assets/coin.png" alt="" class="w-6" />
+            </button>
+
+            <!-- button 3 -->
+            <button
+              id="copy-btn"
+              class="btn flex items-center gap-3 px-8 py-6 rounded-full bg-[#00A63E]"
+            >
+              <p class="text-base font-black text-white" id="copy-count">0</p>
+              <p class="text-base font-black text-white">Copy</p>
+            </button>
+          </div>
+
+        </div>
     </nav>
+
+
+
+
+
+ <!-------------Emergency Service Directory---------------------------->
+
+
+ <div class="container  mx-auto bg-[linear-gradient(90deg,#013223_0%,#006747_50%,#013223_100%)]
+         flex flex-col items-center justify-center gap-5 py-6 px-3">
+  <img src="./assets/logo-dark.png" alt="" class="w-24">
+  <h1 class="text-4xl text-white font-semibold">Emergency Service Directory</h1>
+  <p class="text-xl text-white font-semibold text-center">Government Emergency Services at Your Fingertip – 
+    A Project by  Government of the People’s Republic of Bangladesh</p>
+
+  </div>
+
+
+ <!-- ................... Hot lines container  ..............................-->
+
+  <container>
+
+
+    <div>
+
+      <div>
+        <box>
+          <div
+              class="card p-8 rounded-xl bg-white flex flex-col gap-6 shadow-lg"
+            >
+              <div class="flex items-center justify-between">
+                <img
+                  src="./assets/emergency.png"
+                  alt=""
+                  class="p-4 rounded-2xl bg-[#FFE3E2] w-16"
+                />
+                <img src="./assets/heart.png" alt="">
+                <!-- <button class="text-2xl btn bg-transparent p-5">
++                   <i class="fa-regular fa-heart"></i>
++                 </button> -->
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold">National Emergency Number</h3>
+                <p class="text-lg font-normal text-[#5C5C5C]">
+                  National Emergency
+                </p>
+              </div>
+              <div>
+                <h3 class="text-3xl font-bold">999</h3>
+                <p
+                  class="text-lg font-normal text-[#5C5C5C] bg-[#F2F2F2] px-5 py-2 w-fit rounded-full"
+                >
+                 All
+                </p>
+              </div>
+              <div class="flex gap-2">
+                <button class="btn flex-1 p-4 text-[#5C5C5C]">
+                  <img src="./assets/copy.svg" alt="" /> Copy
+                </button>
+                <button class="btn flex-1 bg-[#00A63E] text-white p-4">
+                  <img src="./assets/call.svg" alt="" /> Call
+                </button>
+              </div>
+            </div>
+
+
+        </box>
+        
+        
+        
+      </div>
+
+
+<!.... call History...................
+      <div>
+
+
+
+      </div>
+      
+      
+    </div>
+
+
+    
+    
+    </container>
+
+
+    <script src="./script.js"></script>
 </body>
 </html>
